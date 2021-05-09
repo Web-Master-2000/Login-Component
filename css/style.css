@@ -1,0 +1,85 @@
+*{
+    /*Genel Resetleme Kodları */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    font-family: sans-serif;
+}
+.continer{
+  margin: 4rem auto;
+ 
+  width: 50%;
+ padding: 10px;
+    
+}
+.field{
+    position: relative;
+    margin-top: 10px
+}
+
+.field label{
+    position: absolute;
+    line-height: 40px;
+    top: 0;
+    left: 15px;
+    font-size: 14px;
+    color: #000;
+    transition: 300ms all
+}
+.field input{
+    width: 100%;
+    line-height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #222;
+    border: 1px solid #ccc;
+    border-radius: 3px
+}
+.field input:focus{
+    outline: 0;
+    border-color: blue;
+}
+.field input:valid + label{
+     /*geçerli input alanı*/
+    
+      
+    line-height: 20px;
+    font-size: 12px;
+    top: -10px;
+    background: #fff;
+    padding: 0 6px;
+ 
+    left: 9px
+}
+
+.field input:focus + label{
+    line-height: 20px;
+    font-size: 12px;
+    top: -10px;
+    background: #fff;
+    padding: 0 6px;
+       color: blue;
+    left: 9px
+}
+button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    width: 100%
+}
+
+
+
+
+
+
